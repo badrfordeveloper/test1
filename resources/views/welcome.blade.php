@@ -61,10 +61,10 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <li class="nav-item">
                     <!-- <a class="nav-link js-scroll-trigger" href="#about">About</a>
                    -->  
-                   <router-link :to="{name:'About'}" class="nav-link js-scroll-trigger">About</router-link>
+                   <router-link :to="{name:'About'}" class="nav-link js-scroll-trigger">à propos</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link :to="{name:'Experience'}" class="nav-link js-scroll-trigger">Experience</router-link>
+                    <router-link :to="{name:'Experience'}" class="nav-link js-scroll-trigger">Expérience</router-link>
                 </li>
                 <li class="nav-item">
                    <router-link :to="{name:'Portfolio'}" class="nav-link js-scroll-trigger">Portfolio</router-link>
@@ -73,7 +73,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                     <router-link :to="{name:'Aptitudes'}" class="nav-link js-scroll-trigger">Aptitudes</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link :to="{name:'Eduction'}" class="nav-link js-scroll-trigger">Eduction</router-link>
+                  <router-link :to="{name:'Eduction'}" class="nav-link js-scroll-trigger">Éducation</router-link>
                 </li>
                 <li class="nav-item">
                    <router-link :to="{name:'Contact'}" class="nav-link js-scroll-trigger">Contact</router-link>

@@ -7,7 +7,7 @@
       <section class="resume-section p-3 p-lg-5 " id="experience">
           <div class="row my-auto">
               <div class="col-12">
-                <h2 class="  text-center">EDUCATION</h2>
+                <h2 class="  text-center">Éducation</h2>
                 <div class="mb-5 heading-border"></div>
               </div>
               <div class="resume-item col-md-6 col-sm-12 " > 

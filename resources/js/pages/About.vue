@@ -16,7 +16,7 @@ font-size: 18px;
 font-weight: bold;
 background-color: #ffffff80;
 padding: 16px;
-border-radius: 16px;text-align: justify;" >je suis un développeur web full stack , mes favorits technologies sont laravel et vuejs , avec 5 ans d'expérience dans le développement web , Je mets mes compétences à vous,à la réussite de vos projets.</p>
+border-radius: 16px;text-align: justify;" >je suis un développeur web full stack , mes technologies préférées sont laravel et vuejs , avec 5 ans d'expérience dans le développement web , Je serais ravie de mettre mes compétences et ma motivation à votre service afin de réaliser vos projets.</p>
               <ul class="list-inline list-social-icons mb-0">
                   <li class="list-inline-item">
                       	<a href="#">

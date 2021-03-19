@@ -774,3 +774,18 @@ a:active {
     width:100%;
     position:absolute;
 }
+
+#sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+    background-color: #309eff;
+    margin: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link.router-link-exact-active {
+  color: #309eff;
+background-color: #e3f0fb;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}

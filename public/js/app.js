@@ -49711,7 +49711,7 @@ var staticRenderFns = [
               },
               [
                 _vm._v(
-                  "je suis un développeur web full stack , mes favorits technologies sont laravel et vuejs , avec 5 ans d'expérience dans le développement web , Je mets mes compétences à vous,à la réussite de vos projets."
+                  "je suis un développeur web full stack , mes technologies préférées sont laravel et vuejs , avec 5 ans d'expérience dans le développement web , Je serais ravie de mettre mes compétences et ma motivation à votre service afin de réaliser vos projets."
                 )
               ]
             ),
@@ -50016,7 +50016,7 @@ var staticRenderFns = [
         [
           _c("div", { staticClass: "row my-auto" }, [
             _c("div", { staticClass: "col-12" }, [
-              _c("h2", { staticClass: "  text-center" }, [_vm._v("EDUCATION")]),
+              _c("h2", { staticClass: "  text-center" }, [_vm._v("Éducation")]),
               _vm._v(" "),
               _c("div", { staticClass: "mb-5 heading-border" })
             ]),
@@ -50201,7 +50201,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "row my-auto" }, [
             _c("div", { staticClass: "col-12" }, [
               _c("h2", { staticClass: "  text-center" }, [
-                _vm._v("Experiences")
+                _vm._v("Expériences")
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "mb-5 heading-border" })
@@ -50224,12 +50224,12 @@ var staticRenderFns = [
                     ]),
                     _vm._v(" "),
                     _c("h5", { staticClass: "title" }, [
-                      _vm._v("Réalisation de différents projets")
+                      _vm._v("RÉALISATION DES DIFFÉRENTS PROJETS")
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "description" }, [
                       _vm._v(
-                        "\n                             Mission : Création des applications et sites web E-commerce, vitrines et gestion,et apprenez de nouvelles techniques .\n                          "
+                        "\n                             Mission :  La création des applications ,sites web E-commerce, vitrines, et l'apprentissage des nouvelles techniques.\n                          "
                       )
                     ])
                   ])
@@ -50269,7 +50269,7 @@ var staticRenderFns = [
                     _vm._v(" "),
                     _c("p", { staticClass: "description" }, [
                       _vm._v(
-                        "\n                              Mission : une application de cabinet diabéte et endocrinologie qui gérer les données des patients et leur consultations.\n                          "
+                        "\n                              Mission : La réalisation d'une application pour un cabinet de diabète et endocrinologie qui gère les données des patients et leur consultations.\n                          "
                       )
                     ])
                   ])
@@ -50289,7 +50289,7 @@ var staticRenderFns = [
                     _vm._v(" "),
                     _c("p", { staticClass: "description" }, [
                       _vm._v(
-                        "\n                              Mission : realiser un projet web qui difinir l’entrprise et répond aux besoins des clients.\n                          "
+                        "\n                              Mission : réaliser un projet web qui défini l’entreprise et répond aux besoins des clients.\n                          "
                       )
                     ])
                   ])
