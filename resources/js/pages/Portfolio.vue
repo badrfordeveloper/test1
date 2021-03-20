@@ -22,7 +22,7 @@
          
             <div class="mix vitrine  col-sm-4 portfolio-item filter finance">
                
-                  <a class="portfolio-link" href="#portfolioModal4" >
+                  <a class="portfolio-link" href="#portfolioModal4"  >
                       <div class="caption-port">
                           <div class="caption-port-content">
                               <i class="fa fa-search-plus fa-3x"></i>

@@ -76,7 +76,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                   <router-link :to="{name:'Eduction'}" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link js-scroll-trigger">Éducation</router-link>
                 </li>
                 <li class="nav-item">
-                   <router-link :to="{name:'Contact'}" data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-link js-scroll-trigger">Contact</router-link>
+                   <router-link :to="{name:'Contact'}" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link js-scroll-trigger">Contact</router-link>
                 </li>
             </ul>
         </div>

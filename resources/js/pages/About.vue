@@ -7,7 +7,7 @@
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
           <div class="my-auto" >
               <img src="img/logo-s.png" class="img-fluid mb-3" alt="">
-              <h1 class="mb-0 " style="word-break: break-all;">Badreddine<span class="text-primary">Jeddab</span>
+              <h1 class="mb-0 " >Badreddine <span class="text-primary">Jeddab</span>
               </h1>
               <div class="subheading mb-5">Le code propre n'est pas une habitude. C'est une addiction! 
               </div>
@@ -59,3 +59,10 @@ border-radius: 16px;text-align: justify;" >je suis un développeur web full stac
 <script>
 	
 </script>
+<style type="text/css">
+  
+#about h1{
+  font-size: 88px;
+}  
+
+</style>
