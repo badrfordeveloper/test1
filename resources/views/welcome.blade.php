@@ -61,22 +61,22 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <li class="nav-item">
                     <!-- <a class="nav-link js-scroll-trigger" href="#about">About</a>
                    -->  
-                   <router-link :to="{name:'About'}" class="nav-link js-scroll-trigger">à propos</router-link>
+                   <router-link :to="{name:'About'}" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link js-scroll-trigger">à propos</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link :to="{name:'Experience'}" class="nav-link js-scroll-trigger">Expérience</router-link>
+                    <router-link :to="{name:'Experience'}" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link js-scroll-trigger">Expérience</router-link>
                 </li>
                 <li class="nav-item">
-                   <router-link :to="{name:'Portfolio'}" class="nav-link js-scroll-trigger">Portfolio</router-link>
+                   <router-link :to="{name:'Portfolio'}" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link js-scroll-trigger">Portfolio</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link :to="{name:'Aptitudes'}" class="nav-link js-scroll-trigger">Aptitudes</router-link>
+                    <router-link :to="{name:'Aptitudes'}" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link js-scroll-trigger">Aptitudes</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link :to="{name:'Eduction'}" class="nav-link js-scroll-trigger">Éducation</router-link>
+                  <router-link :to="{name:'Eduction'}" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link js-scroll-trigger">Éducation</router-link>
                 </li>
                 <li class="nav-item">
-                   <router-link :to="{name:'Contact'}" class="nav-link js-scroll-trigger">Contact</router-link>
+                   <router-link :to="{name:'Contact'}" data-toggle="collapse" data-target=".navbar-collapse.in" class="nav-link js-scroll-trigger">Contact</router-link>
                 </li>
             </ul>
         </div>
@@ -94,6 +94,10 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     
 
      <script src="js/app.js"></script>
+     <script>
+      
+    
+    </script>
 </body>
 
 </html>

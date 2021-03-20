@@ -7,11 +7,11 @@
               </div>
               <div class="col-md-12">
                 <div class="port-head-cont">
-                  <button class="btn btn-general btn-green filter-b" data-filter="all">TOUS</button>
-                  <button class="btn btn-general btn-green filter-b" data-filter=".application">APPLICATION WEB</button> 
-                  <button class="btn btn-general btn-green filter-b" data-filter=".vitrine">VITRINE</button>
+                  <button class="btn btn-general btn-green filter-b" data-mixitup-control data-filter="all">TOUS</button>
+                  <button class="btn btn-general btn-green filter-b" data-mixitup-control data-filter=".application">APPLICATION WEB</button> 
+                  <button class="btn btn-general btn-green filter-b"  data-mixitup-control data-filter=".vitrine">VITRINE</button>
                   <!-- <button class="btn btn-general btn-green filter-b" data-filter=".catalogue">CATALOGUE</button> -->
-                  <button class="btn btn-general btn-green filter-b" data-filter=".ecommerce">E-COMMERCE</button>
+                  <button class="btn btn-general btn-green filter-b"  data-mixitup-control data-filter=".ecommerce">E-COMMERCE</button>
                 </div>
               </div>
           </div>
@@ -201,12 +201,19 @@ export default {
 
   mounted() {
     var containerEl = $('.container');
-    var mixer = mixitup(containerEl);
+    var mixer =  mixitup(containerEl, {
+     selectors: {
+         control: '[data-mixitup-control]'
+     }
+    });
+
+   
+
   }
 }
 </script>
 
-<style>
+<style scoped>
 .kunk-logo {
   width: 12.5rem;
 }

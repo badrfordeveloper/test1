@@ -775,7 +775,7 @@ a:active {
     position:absolute;
 }
 
-#sideNav .navbar-collapse .navbar-nav .nav-item {
+.nav-item {
     display: block;
     background-color: #309eff;
     margin: 10px;
@@ -788,4 +788,7 @@ background-color: #e3f0fb;
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(255, 255, 255);
+}
+#sideNav {
+    text-align: center;
 }
