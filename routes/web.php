@@ -12,10 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('/add_contact', 'ContactController@addContact');
 
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('{any}', function () {
     return view('welcome');
 })->where('any','.*');

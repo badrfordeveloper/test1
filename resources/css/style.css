@@ -792,3 +792,14 @@ background-color: #e3f0fb;
 #sideNav {
     text-align: center;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.toast{
+
+}
+.toast-header,.toast-body{
+  padding: 9px;
+}

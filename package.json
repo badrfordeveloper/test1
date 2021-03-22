@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.3",
+        "bootstrap-vue": "^2.21.2",
         "isotope-layout": "^3.0.6",
         "mixitup": "^3.3.1",
         "vue-router": "^3.5.1"

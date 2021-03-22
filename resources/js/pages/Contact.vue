@@ -13,17 +13,27 @@
                 <p>Vous recherchez un développeur créatif et spécial qui travaille avec de nouveaux outils de Web, et prêt pour des nouveaux challenges et idées, N'hésitez pas à me contacter</p>
               </div>   
               <div class="row con-form">
-                <div class="col-md-12">
-                  <input type="text" name="full-name" placeholder="Full Name" class="form-control" disabled>
-                </div>
-                <div class="col-md-12">
-                  <input type="text" name="email" placeholder="Email Id" class="form-control" disabled>
-                </div>
-                <div class="col-md-12">
-                  <input type="text" name="subject" placeholder="Subject" class="form-control" disabled>
-                </div>
-                <div class="col-md-12"><textarea name="" id="" disabled></textarea></div>
-                <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" role="button" disabled="">Send</button></div>
+
+                <form id="form" @submit.prevent="sendForm" style="width: 100%;">
+                    <div class="col-md-12">
+                      <input type="text" name="name" v-model="obj.name" placeholder="Full Name" class="form-control" >
+                    </div>
+                    <div class="col-md-12">
+                      <input type="text" name="email" v-model="obj.email" placeholder="Email Id" class="form-control" >
+                    </div>
+                    <div class="col-md-12">
+                      <input type="text" name="subject"  v-model="obj.subject" placeholder="Subject" class="form-control" >
+                    </div>
+                    <div class="col-md-12">
+                      <textarea name="body" v-model="obj.body"  id="" ></textarea>
+                    </div>
+
+                    <div class="col-md-12 sub-but">
+                      <button class="btn btn-general btn-white" role="button" type="submit" >Send</button>
+                    </div>
+
+                  </form>
+
               </div>
             </div>
             <div class="col-md-4 col-sm-12 mt-5"> 
@@ -56,7 +66,62 @@
 	</div>
 </template>
 <script>
-	
+	   export default {
+
+        data(){
+          return{
+            obj :{
+              name:'',
+              email:'',
+              subject : '',
+              body : ''
+            },
+          }
+        },
+        methods:{
+
+          async sendForm(){
+            console.log(this.obj);
+                  if(this.obj.name.trim()=='') {
+                      return this.makeAlert('danger','the Tag Name is empty');
+                  }
+                  else if (this.obj.email.trim()=='') {
+                      return this.makeAlert('danger','the email is empty');
+                  }
+                  else if (this.obj.subject.trim()=='') {
+                      return this.makeAlert('danger','the subject is empty');
+                  }
+                  else if (this.obj.body.trim()=='') {
+                      return this.makeAlert('danger','the body is empty');
+                  }else{
+
+                   const res = await this.callApi('post', '/add_contact', this.obj)
+                    if(res.status===200){
+                      this.makeAlert('success','Your message has been received successfully ');
+                    }else{
+                      if(res.status==422){
+                        if(res.data.errors.name){
+                          this.makeAlert('danger',res.data.errors.name[0]);
+                        }
+                        if(res.data.errors.email){
+                          this.makeAlert('danger',res.data.errors.email[0]);
+                        }
+                        if(res.data.errors.subject){
+                          this.makeAlert('danger',res.data.errors.subject[0]);
+                        }
+                        if(res.data.errors.body){
+                          this.makeAlert('danger',res.data.errors.body[0]);
+                        }
+                      }else{
+                        this.makeAlert('danger','something wrong');
+                      }
+                    }
+                  }
+          },
+         
+        }
+      
+  }
 </script>
 <style>
   .contact{
