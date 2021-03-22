@@ -15,7 +15,7 @@ class ContactController extends Controller
             'body' => 'required'
         ]);
 
-        \Mail::to($request->input('email'))->send(new \App\Mail\ContactMail($request->all()));
+        \Mail::to("mrbadrjeddab@gmail.com")->send(new \App\Mail\ContactMail($request->all()));
 
 
     	return 'success';
