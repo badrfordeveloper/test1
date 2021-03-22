@@ -98,6 +98,8 @@
                    const res = await this.callApi('post', '/add_contact', this.obj)
                     if(res.status===200){
                       this.makeAlert('success','Your message has been received successfully ');
+
+                      this.resetForm();
                     }else{
                       if(res.status==422){
                         if(res.data.errors.name){
@@ -118,6 +120,17 @@
                     }
                   }
           },
+
+          resetForm(){
+            let obj2 ={
+              name:'',
+              email:'',
+              subject : '',
+              body : ''
+            };
+
+            this.obj=obj2;
+          }
          
         }
       
