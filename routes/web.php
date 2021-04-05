@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 Route::post('/add_contact', 'ContactController@addContact');
 
+
+Route::get('/admin', function () {
+    return view('admin');
+});
+Route::get('/admin/{any}', function () {
+    return view('admin');
+});
+
+
 Route::get('/', function () {
     return view('welcome');
 });

@@ -1,9 +1,10 @@
-import About from './pages/About';
-import Experience from './pages/Experience';
-import Portfolio from './pages/Portfolio';
-import Aptitudes from './pages/Skills';
-import Eduction from './pages/Eduction';
-import Contact from './pages/Contact';
+import About from './home/pages/About';
+import Experience from './home/pages/Experience';
+import Portfolio from './home/pages/Portfolio';
+import Aptitudes from './home/pages/Skills';
+import Eduction from './home/pages/Eduction';
+import Contact from './home/pages/Contact';
+import links from './home/pages/links';
 
 
 
@@ -22,6 +23,11 @@ export default {
 			path:'/Experience' , 
 			component:Experience,
 			name:'Experience'
+		},
+		{
+			path:'/links' , 
+			component:links,
+			name:'links'
 		},
 		{
 			path:'/Portfolio' , 

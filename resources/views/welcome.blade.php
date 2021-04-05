@@ -24,7 +24,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <link href="css/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="{{asset('css/main.css')}}" rel="stylesheet">
 
 
 
