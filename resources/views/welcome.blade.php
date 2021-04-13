@@ -39,6 +39,13 @@ License URL: https://creativecommons.org/licenses/by/4.0/
       .fade-enter-active,.fade-leave-active{
         transition:all .3s ease;
       }
+     .bg-primaryy {
+    background-color: #2196f3 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
   </style>
 </head>
 
@@ -46,7 +53,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
     <div id="app">
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primaryy fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#">
         <span class="d-block d-lg-none  mx-0 px-0"><img src="img/logo-white.png" alt="" class="img-fluid"></span>
         <span class="d-none d-lg-block">
@@ -98,6 +105,27 @@ License URL: https://creativecommons.org/licenses/by/4.0/
       
     
     </script>
+     <style>
+      .fade-enter,.fade-leave-to{
+        opacity: 0;
+        transform: translate(20em);
+      }
+
+      .fade-enter-active,.fade-leave-active{
+        transition:all .3s ease;
+      }
+     .bg-primaryy {
+    background-color: #2196f3 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.text-primary {
+    color: #2196f3 !important;
+}
+
+
+  </style>
 </body>
 
 </html>

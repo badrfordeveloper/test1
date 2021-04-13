@@ -592,7 +592,7 @@ a:active {
 }
 
 #award-box .title {
-    font-size: 18px;
+    /* font-size: 18px; */
     color: #444;
     margin-top: 0;
     transition: all 0.3s ease 0s;
@@ -782,7 +782,7 @@ a:active {
 }
 
 .navbar-dark .navbar-nav .nav-link.router-link-exact-active {
-  color: #309eff;
+  color: #309eff !important;
 background-color: #e3f0fb;
 }
 

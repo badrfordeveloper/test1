@@ -19,7 +19,7 @@ padding: 16px;
 border-radius: 16px;text-align: justify;" >je suis un développeur web full stack , mes technologies préférées sont laravel et vuejs , avec 5 ans d'expérience dans le développement web , Je serais ravie de mettre mes compétences et ma motivation à votre service afin de réaliser vos projets.</p>
               <ul class="list-inline list-social-icons mb-0">
                   <li class="list-inline-item">
-                      	<a href="#">
+                      	<a href="https://www.facebook.com/profile.php?id=100065042387688" target="_blank">
 		                  <span class="fa-stack fa-lg">
 		                    <i class="fa fa-circle fa-stack-2x"></i>
 		                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
@@ -27,7 +27,7 @@ border-radius: 16px;text-align: justify;" >je suis un développeur web full stac
 		                </a>
                   </li>
                   <li class="list-inline-item">
-                      	<a href="https://wa.me/+2121615564741">
+                      	<a href="https://wa.me/+2121615564741" target="_blank">
 		                  <span class="fa-stack fa-lg">
 		                    <i class="fa fa-circle fa-stack-2x"></i>
 		                    <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
@@ -35,21 +35,21 @@ border-radius: 16px;text-align: justify;" >je suis un développeur web full stac
 		                </a>
                   </li>
                   <li class="list-inline-item">
-                      	<a href="https://www.linkedin.com/in/badreddine-jeddab-a67168192/">
+                      	<a href="https://www.linkedin.com/in/badreddine-jeddab-a67168192/" target="_blank">
 		                  <span class="fa-stack fa-lg">
 		                    <i class="fa fa-circle fa-stack-2x"></i>
 		                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
 		                  </span>
 		                </a>
                   </li>
-                  <li class="list-inline-item">
+             <!--      <li class="list-inline-item">
                       	<a href="#">
 		                  <span class="fa-stack fa-lg">
 		                    <i class="fa fa-circle fa-stack-2x"></i>
 		                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
 		                  </span>
 		                </a>
-                  </li>
+                  </li> -->
               </ul>
           </div>
       </section>

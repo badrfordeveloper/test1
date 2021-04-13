@@ -1,9 +1,5 @@
 <template>
   <div>
-
-        <!--====================================================
-                           AWARDS
-    ======================================================-->       
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
           <div class="row my-auto justify-content-md-center">
               <div class="col-12">

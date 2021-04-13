@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProjectController extends Controller
 {
@@ -14,7 +15,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return Project::orderBy('id', 'desc')->get();
+        return Project::orderBy('id', 'desc')->with('type:id,libelle')->get();
     }
 
     /**
@@ -35,7 +36,15 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        return Project::create($request->all());
+
+        $directoryPhoto = 'projects';
+        Storage::makeDirectory($directoryPhoto);
+
+        $requestData = $request->all();
+        if($request->hasFile('image')) 
+        $requestData['image']= $request->file('image')->store($directoryPhoto );
+
+        return Project::create($requestData);
     }
 
     /**
@@ -69,7 +78,24 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
-        //
+        $oldPhoto =$project->image;
+
+        
+        $requestData = $request->except(['_method','image']);
+        
+        if($request->hasFile('image')){
+            $requestData['image']= $request->file('image')->store('projects');
+        } 
+
+        
+        if( !empty($requestData['image']) )
+        {
+            Storage::delete($oldPhoto);
+        }
+
+        $project->update($requestData);
+
+        return $project;
     }
 
     /**
@@ -80,6 +106,8 @@ class ProjectController extends Controller
      */
     public function destroy(Project $project)
     {
-        //
+      Storage::delete($project->image);
+ 
+      return  Project::destroy($project->id);
     }
 }
