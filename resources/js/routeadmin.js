@@ -1,6 +1,7 @@
 import Projects from './admin/pages/Projects';
 import Users from './admin/pages/Users';
 import Home from './admin/pages/Home';
+import Login from './admin/pages/Login';
 import Eduction from './home/pages/Eduction';
 import Contact from './home/pages/Contact';
 
@@ -28,9 +29,9 @@ export default {
 			name:'Users'
 		},
 		{
-			path:'/admin/Eduction' , 
-			component:Eduction,
-			name:'Eduction'
+			path:'/admin/login' , 
+			component:Login,
+			name:'Login'
 		},
 		{
 			path:'/admin/Contact' , 

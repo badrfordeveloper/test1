@@ -162,7 +162,6 @@ export default {
       return this.editedIndex === -1 ? "New Item" : "Edit Item";
     },
   },
-
   watch: {
     dialog(val) {
       val || this.close();

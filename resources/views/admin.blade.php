@@ -1,3 +1,4 @@
+
 <!--
 author: Boostraptheme
 author URL: https://boostraptheme.com
@@ -45,7 +46,11 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 <body >
 
   <div id="app">
-    <admin></admin>
+  @if(Auth::check())
+               <admin :user="{{Auth::user()}}"></admin>
+        @else
+                <admin :user="false"></admin>
+        @endif
 
 <!--     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#">

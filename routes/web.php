@@ -15,13 +15,20 @@ use Illuminate\Support\Facades\Route;
 Route::post('/add_contact', 'ContactController@addContact');
 
 
-Route::get('/admin', function () {
+Route::post('login', 'UserController@login');
+Route::get('/admin/logout', 'UserController@logout');
+Route::get('/admin', 'AdminController@index');
+Route::any('/admin/{slug}', 'AdminController@index')->where('slug', '([A-z\d-\/_.]+)?');
+
+
+
+/* Route::get('/admin', function () {
     return view('admin');
 });
 Route::get('/admin/{any}', function () {
     return view('admin');
 });
-
+ */
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,3 +37,5 @@ Route::get('/', function () {
 Route::get('{any}', function () {
     return view('welcome');
 })->where('any','.*');
+
+
